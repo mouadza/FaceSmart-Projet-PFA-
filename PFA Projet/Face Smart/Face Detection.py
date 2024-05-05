@@ -3,7 +3,7 @@ import cv2
 import sqlite3
 from datetime import datetime
 
-conn = sqlite3.connect('votre_base_de_donnees.db')
+conn = sqlite3.connect('gestion_des_employes.db')
 cursor = conn.cursor()
 cursor.execute("SELECT Code, Image FROM Employees")
 known_faces = cursor.fetchall()
